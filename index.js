@@ -67,7 +67,7 @@
             .textContent.split("/")
             .map(Number);
 
-          if (maxEnergy - currentEnergy > 100 && currentFish > 1) {
+          if (maxEnergy - currentEnergy > 300 && currentFish > 1) {
             const countEnergyClicks = Math.min(
               currentFish,
               Math.floor((maxEnergy - currentEnergy) / 5)
@@ -82,7 +82,7 @@
                   .querySelector(".image-button[alt='Plus Icon']")
                   .click();
                 await new Promise((res) =>
-                  setTimeout(res, random(2, 10) * 100)
+                  setTimeout(res, random(1, 6) * 100)
                 );
               }
               document.querySelector(".modal-wrapper .plain-button").click();
