@@ -5,12 +5,12 @@
   // 3 — Plant
   // 4 — Cow
   const availableMaps = [1, 2, 3, 4];
-  // Delay between moving to the next map [min, max] [5sec, 15sec]
-  const delayNextMap = [5 * 1000, 15 * 1000];
-  // Delay after map selection [min, max] [5sec, 15sec]
-  const delayAfterMapSelect = [5 * 1000, 15 * 1000];
-  // Delay after mine [min, max] [10sec, 25sec]
-  const delayAfterMine = [10 * 1000, 25 * 1000];
+  // Delay between moving to the next map [min, max] [3sec, 8sec]
+  const delayNextMap = [3 * 1000, 8 * 1000];
+  // Delay after map selection [min, max] [3sec, 8sec]
+  const delayAfterMapSelect = [3 * 1000, 8 * 1000];
+  // Delay after mine [min, max] [5sec, 15sec]
+  const delayAfterMine = [5 * 1000, 15 * 1000];
   // Delay before repair begins [min, max] [8sec, 15sec]
   const delayBeforeRepair = [8 * 1000, 15 * 1000];
   // Delay after repair begins [min, max] [1sec, 3sec]
@@ -95,7 +95,7 @@
 
           item.click();
 
-          await new Promise((res) => setTimeout(res, random(1, 2) * 1000));
+          await new Promise((res) => setTimeout(res, random(1, 2) * 500));
 
           const buttonMine = document.querySelector(
             ".info-section .plain-button"
