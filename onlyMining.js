@@ -1,14 +1,8 @@
 (async () => {
-  // Maps on which you can collect resources
-  // 1 — Mining
-  // 2 — Chiken
-  // 3 — Plant
-  // 4 — Cow
-  const availableMaps = [1, 2, 3, 4];
-  // Delay between moving to the next map [min, max] [3sec, 8sec]
-  const delayNextMap = [3 * 1000, 8 * 1000];
-  // Delay after map selection [min, max] [3sec, 8sec]
-  const delayAfterMapSelect = [3 * 1000, 8 * 1000];
+  // ==============================================
+  // ============ Mining only version =============
+  // ==============================================
+  
   // Delay after mine [min, max] [5sec, 15sec]
   const delayAfterMine = [5 * 1000, 15 * 1000];
   // Delay before repair begins [min, max] [8sec, 15sec]
