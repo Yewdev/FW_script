@@ -120,11 +120,8 @@
                 }
               }
         }
-
-        mapBtn.click();
       }
     } catch (e) {
-      mapBtn.click();
     }
   }
 })();
