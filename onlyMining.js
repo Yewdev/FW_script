@@ -54,7 +54,7 @@
               document.querySelector(".resource-energy img").click();
               await new Promise((res) => setTimeout(res, random(1, 2) * 1000));
 
-              for (let i = 0; i++ < countEnergyClicks; ) {
+              for (let i = 0; i++ < countEnergyClicks + 1; ) {
                 document
                   .querySelector(".image-button[alt='Plus Icon']")
                   .click();
