@@ -59,7 +59,7 @@
                   .querySelector(".image-button[alt='Plus Icon']")
                   .click();
                 await new Promise((res) =>
-                  setTimeout(res, random(1, 6) * 100)
+                  setTimeout(res, random(1, 4) * 50)
                 );
               }
               document.querySelector(".modal-wrapper .plain-button").click();
