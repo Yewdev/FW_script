@@ -77,13 +77,15 @@
           const buttonMine = document.querySelector(
             ".info-section .plain-button"
           );
+          
+          /*
           const timeToEnd = document.querySelector(
             ".info-section .info-time"
           ).innerText;
-
+          */
+          
           if (
-            ![...buttonMine.classList].includes("disabled") &&
-            (timeToEnd === "00:00:00")
+            ![...buttonMine.classList].includes("disabled")
           ) {
             buttonMine.click();
 
