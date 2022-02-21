@@ -78,14 +78,15 @@
             ".info-section .plain-button"
           );
           
-          /*
+          
           const timeToEnd = document.querySelector(
             ".info-section .info-time"
           ).innerText;
-          */
+          
           
           if (
-            ![...buttonMine.classList].includes("disabled")
+            ![...buttonMine.classList].includes("disabled") &&
+            (timeToEnd === "00:00:00")
           ) {
             buttonMine.click();
 
